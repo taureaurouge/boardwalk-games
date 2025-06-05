@@ -5,8 +5,8 @@
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #416a8e; /* blue */
-    --secondary-color: #aa9581; /* color */
+    --primary-color: #502b1c; /* blue */
+    --secondary-color: #beb6ae; /* color */
     --highlight-color: #416a8e;
     --highlight-color-light: #7a9fc2;
 }
@@ -20,11 +20,88 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
 .sub-heading-color {
     color: var(--highlight-color);
 }
 
-/* grid visualisation for css testing */
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* navbar */
+
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
+/* header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
+/* services */
+
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
+#new-games .card, #fav-games .card {
+    border: none;
+}
+
+/* footer */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .sub-heading-color {
+    color: var(--highlight-color-light)
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--highlight-color-light);
+    font-size: 1.9rem;
+    transition: 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+
+/* grid visualisation for css testing (*ge denna en egen kommentar*)
 
 .container, .row {
     border: 2px solid black;
@@ -33,4 +110,41 @@ h1, h2, h3 {
 .col-12 {
     border: 2px solid white;
     background-color: rgb(202, 167, 167);
+}
+
+ */
+
+
+/* media queries */
+
+/* medium devices (768px and up) */
+@media screen and (min-width:768px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* large devices (992px and up) */
+@media screen and (min-width:992px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* xl devices (1200px and up) */
+@media screen and (min-width:1200px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices (1200px and up) */
+@media screen and (min-width:1400px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
 }
