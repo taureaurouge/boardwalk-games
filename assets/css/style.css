@@ -37,6 +37,31 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* buttons */
+
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-transparent {
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+    padding: 7px 25px;
+}
+
+.custom-button-transparent:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 /* navbar */
 
 #navbar {
@@ -67,6 +92,17 @@ h2 {
 
 #new-games .card, #fav-games .card {
     border: none;
+}
+
+/* Margins for reserve-games */
+
+#reserve-games {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#reserve-games button {
+    margin-top: 1rem;
 }
 
 /* footer */
